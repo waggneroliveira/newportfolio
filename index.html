@@ -487,7 +487,7 @@
                             </ul>
                           </div>
                           <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-                            <h3 class="m-4">Project developed for the Federal Government of Sergipe.</h3>
+                            <h3 class="m-4">Project developed for the Federal Government.</h3>
                             <h4>Front-End Developement</h4>
                             <p class="text-uppercase">
                               Html, Css, Sass, JavaScript, Jquery
@@ -760,10 +760,14 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Wagner Vasconcelos - Portfólio</strong> <span>All Rights Reserved</span></p>
+        <script>
+            var currentYear = new Date().getFullYear();
+            document.write('<p>© ' + currentYear + ' <span>All Rights Reserved</span></p>');
+        </script>  
+        <!-- <p>© <span>Copyright</span> <strong class="px-1 sitename">Wagner Vasconcelos - Portfólio</strong> <span>All Rights Reserved</span></p> -->
       </div>
       <div class="credits">
-        <a href="">Developed By</a> Wagner Vasconcelos
+        Developed By <strong>Wagner Vasconcelos</strong> 
       </div>
     </div>
 
