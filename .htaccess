@@ -1,11 +1,12 @@
-# Desabilitar cache para arquivos CSS e JS
 <IfModule mod_headers.c>
     RewriteEngine on
     RewriteBase /
 
-    RewriteCond %{HTTP_HOST} ^wagnerwebdev\.com\.br/ [NC] #verifica se falta www (MENOR IDEIA DO PQ DO NC)
-    RewriteRule ^(.*)$ https://www.wagnerwebdev.com.br//$1 [R=301,L] #301 Moved Permanently
-    
+    # Redireciona HTTP para HTTPS e www
+    RewriteCond %{HTTPS} off [OR]
+    RewriteCond %{HTTP_HOST} !^www\. [NC]
+    RewriteRule ^(.*)$ https://www.wagnerwebdev.com.br/$1 [R=301,L]
+
     # Para arquivos CSS e JS
     <FilesMatch "\.(css|js)$">
         Header set Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate"
