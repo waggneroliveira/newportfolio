@@ -1123,8 +1123,8 @@ section,
   padding: 30px;
 }
 .custom-max-height{
-  height: 370px;
-  max-height: 370px;
+  height: 410px;
+  max-height: 410px;
   overflow-y: auto
 }
 @media (max-width: 575px) {
