@@ -65,7 +65,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/tec-2.jpg" alt="" data-aos="fade-in" class="">
+      <img id="profileImage" src="assets/img/tec-2.jpg" alt="" data-aos="fade-in" class="">
 
       <div class="container px-2 px-sm-5" data-aos="fade-up" data-aos-delay="100">
         <h2>Wagner Vasconcelos</h2>
@@ -95,7 +95,7 @@
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>13 April 1994</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://waggneroliveira.github.io/portfolio/</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span> <a href="https://www.wagnerwebdev.com.br" target="_blank">wagnerwebdev.com.br</a></span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+55 71 982743414</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Lauro de Freitas, State of Bahia - Brazil</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Marital Status:</strong> <span>Single</span></li>
@@ -1282,6 +1282,26 @@
       });
     });
   </script>
+  
+  <script>    
+  // Função para verificar a largura da tela e mudar a imagem    
+  function updateProfileImage() {        
+    const profileImage = document.getElementById('profileImage');        
+    const mobileImageSrc = 'assets/img/mobile.jpg'; // Caminho da imagem para mobile 
+           
+    //Verifica a largura da tela        
+    if (window.innerWidth <= 575) {            
+      profileImage.src = mobileImageSrc; // Muda a imagem para mobile        
+    } else {            
+      profileImage.src = 'assets/img/tec-2.jpg'; // Imagem padrão       
+    }    
+  } 
+    // Chama a função ao carregar a página    
+    updateProfileImage();    
+    // Adiciona um listener para o evento de resize da janela    
+    window.addEventListener('resize', updateProfileImage);
+  </script>
+
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 

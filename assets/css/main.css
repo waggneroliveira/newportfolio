@@ -701,7 +701,7 @@ section,
 }
 
 .about__skill__navigation li {
-  width: 47px;
+  width: 40px;
 }
 
 .about__skill__navigation li:hover img {
@@ -852,6 +852,7 @@ section,
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+  z-index: 3;
 }
 
 .close:hover,
