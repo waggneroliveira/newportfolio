@@ -1,37 +1,39 @@
 <!doctypehtml>
 <html lang="en">
-  <!-- Preconnect para acelerar conexões -->
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="preconnect" href="https://www.google-analytics.com">
+<!-- Preconnect e Preload para acelerar o carregamento do GA -->
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preload" as="script" href="https://www.googletagmanager.com/gtag/js?id=G-HJ8ZH4GVBS">
 
-  <!-- Google Analytics (otimizado para desempenho máximo) -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+<!-- Google Analytics - Otimizado para desempenho máximo -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
 
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(function () {
-        var script = document.createElement('script');
-        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-HJ8ZH4GVBS';
-        script.async = true;
-        document.head.appendChild(script);
+  function loadGA() {
+    var script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-HJ8ZH4GVBS';
+    script.defer = true; // Usa defer ao invés de async
+    document.head.appendChild(script);
 
-        gtag('js', new Date());
-        gtag('config', 'G-HJ8ZH4GVBS');
-      });
-    } else {
-      // Fallback para navegadores que não suportam requestIdleCallback
-      window.addEventListener('load', function () {
-        var script = document.createElement('script');
-        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-HJ8ZH4GVBS';
-        script.async = true;
-        document.head.appendChild(script);
+    gtag('js', new Date());
 
-        gtag('js', new Date());
-        gtag('config', 'G-HJ8ZH4GVBS');
-      });
-    }
-  </script>
+    gtag('config', 'G-HJ8ZH4GVBS', {
+      send_page_view: false,
+      allow_google_signals: false,
+      allow_ad_personalization_signals: false
+    });
+
+    // Envia manualmente o page_view
+    gtag('event', 'page_view');
+  }
+
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(loadGA);
+  } else {
+    window.addEventListener('load', loadGA);
+  }
+</script>
 
   
    <title>Wagner Vasconcelos de Oliveira - Portfólio Pessoal</title>
@@ -1099,7 +1101,6 @@
          script.onload = function () {
              if (window.VLibras && window.VLibras.Widget) {
                  new window.VLibras.Widget("https://vlibras.gov.br/app");
-                 console.log("VLibras iniciado com sucesso");
              } else {
                  console.warn("VLibras não foi carregado corretamente.");
              }
