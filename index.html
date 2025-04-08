@@ -20,7 +20,7 @@
   <meta content="Back-end developer experienced in Laravel, Vue, and APIs. Proficient in web development, database modeling, and SEO, focused on performance and scalability." name="description">
   <meta content="desenvolvedor web, back-end Laravel, front-end JavaScript, full stack, PHP, Laravel, Vue.js, React, Tailwind CSS, Bootstrap, Sass, API REST, MySQL, desenvolvimento web, programação" name="keywords">
 
-  <script type="application/ld+json">
+  <script defer type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "Organization",
@@ -54,8 +54,6 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -81,27 +79,27 @@
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpeg" alt="imagem de perfil" class="img-fluid rounded-circle">
+      <img src="assets/img/my-profile-img.jpeg" alt="imagem de perfil" class="img-fluid rounded-circle" title="imagem de perfil" loading="lazy">
     </div>
 
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+    <a href="index.html" rel="nofollow noopener noreferrer" class="logo d-flex align-items-center justify-content-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
       <h1 class="sitename">Wagner Vasconcelos</h1>
     </a>
 
     <div class="social-links text-center">
-      <a href="https://wa.me/5571982743414" target="_blank" class="whatisapp"><i class="bi bi-whatsapp"></i></a>
-      <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://wa.me/5571982743414" aria-label="Visite nosso LinkedIn" target="_blank" class="whatisapp"><i class="bi bi-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" aria-label="Converse no WhatsApp" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
     </div>
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="#hero" rel="nofollow noopener noreferrer" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about" rel="nofollow noopener noreferrer"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume" rel="nofollow noopener noreferrer"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio" rel="nofollow noopener noreferrer"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#contact" rel="nofollow noopener noreferrer"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
 
@@ -112,7 +110,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img id="profileImage" src="assets/img/tec-2.jpg" alt="Banner Hero" data-aos="fade-in" class="">
+      <img id="profileImage" src="assets/img/tec-2.jpg" alt="Banner Hero" data-aos="fade-in" title="Banner Hero">
 
       <div class="container px-2 px-sm-5" data-aos="fade-up" data-aos-delay="100">
         <h2>Wagner Vasconcelos</h2>
@@ -134,7 +132,7 @@
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.jpeg" class="img-fluid about" alt="Imagem de perfil">
+            <img src="assets/img/my-profile-img.jpeg" class="img-fluid about" alt="Imagem de perfil" title="Imagem de perfil" loading="lazy">
           </div>
           <div class="col-lg-8 content">
             <h2 class="mb-5">Web Developer.</h2>
@@ -142,7 +140,7 @@
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>13 April 1994</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span> <a href="https://www.wagnerwebdev.com.br" target="_blank">wagnerwebdev.com.br</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span> <a href="https://www.wagnerwebdev.com.br" rel="nofollow noopener noreferrer" target="_blank">wagnerwebdev.com.br</a></span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+55 71 982743414</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Lauro de Freitas, State of Bahia - Brazil</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Marital Status:</strong> <span>Single</span></li>
@@ -225,55 +223,55 @@
 
           <ul class="about__skill__navigation d-flex justify-content-center justify-content-lg-start gap-4 flex-wrap align-items-center">
             <li class="list-unstyled">
-                <img src="assets/img/html.svg" alt="HTML">
+                <img src="assets/img/html.svg" alt="HTML" title="HTML" loading="lazy">
             </li>
             <li class="list-unstyled">
-                <img src="assets/img/css.svg" alt="CSS 3" title="CSS 3">
+                <img src="assets/img/css.svg" alt="CSS 3" title="CSS 3" loading="lazy">
             </li>
             <li class="list-unstyled">
-                <img src="assets/img/tailwind.svg" alt="TAILWIND" title="TAILWIND">
+                <img src="assets/img/tailwind.svg" alt="TAILWIND" title="TAILWIND" loading="lazy">
             </li>
             <li class="list-unstyled">
-                <img src="assets/img/js.svg" alt="JAVA SCRIPT" title="JAVA SCRIPT">
+                <img src="assets/img/js.svg" alt="JAVA SCRIPT" title="JAVA SCRIPT" loading="lazy">
             </li>
             <li class="list-unstyled">
-                <img src="assets/img/vue.svg" alt="VUE JS" title="VUE JS">
+                <img src="assets/img/vue.svg" alt="VUE JS" title="VUE JS" loading="lazy">
             </li>
             <li class="list-unstyled">
-                <img src="assets/img/jquery.svg" alt="JQUERY" title="JQUERY">
+                <img src="assets/img/jquery.svg" alt="JQUERY" title="JQUERY" loading="lazy">
             </li>
             <li class="list-unstyled">
-                <img src="assets/img/sass.png" alt="SASS" title="SASS">
+                <img src="assets/img/sass.png" alt="SASS" title="SASS" loading="lazy">
             </li>                                
             <li class="list-unstyled">
-                <img src="assets/img/php.svg" alt="PHP" title="PHP">
+                <img src="assets/img/php.svg" alt="PHP" title="PHP" loading="lazy">
             </li>
             <li class="list-unstyled">
-                <img src="assets/img/git.svg" alt="GIT" title="GIT">
+                <img src="assets/img/git.svg" alt="GIT" title="GIT" loading="lazy">
             </li>
             <li class="list-unstyled">
-                <img src="assets/img/github.svg" alt="GITHUB" title="GITHUB">
+                <img src="assets/img/github.svg" alt="GITHUB" title="GITHUB" loading="lazy">
             </li>
             <li class="list-unstyled">
-                <img src="assets/img/laravel.svg" alt="LARAVEL" title="LARAVEL">
+                <img src="assets/img/laravel.svg" alt="LARAVEL" title="LARAVEL" loading="lazy">
             </li>
             <li class="list-unstyled">
-                <img src="assets/img/php.jpg" alt="PHP" title="PHP">
+                <img src="assets/img/php.jpg" alt="PHP" title="PHP" loading="lazy">
             </li>
             <li class="list-unstyled">
-                <img src="assets/img/bootstrap.svg" alt="BOOTSTRAP" title="BOOTSTRAP">
+                <img src="assets/img/bootstrap.svg" alt="BOOTSTRAP" title="BOOTSTRAP" loading="lazy">
             </li>
             <li class="list-unstyled">
-                <img src="assets/img/docker.jpg" alt="DOCKER" title="DOCKER">
+                <img src="assets/img/docker.jpg" alt="DOCKER" title="DOCKER" loading="lazy">
             </li>
             <li class="list-unstyled">
-                <img src="assets/img/mysql.svg" alt="MYSQL" title="MYSQL">
+                <img src="assets/img/mysql.svg" alt="MYSQL" title="MYSQL" loading="lazy">
             </li>  
             <li class="list-unstyled">
-                <img src="assets/img/figma.svg" alt="FIGMA" title="FIGMA">
+                <img src="assets/img/figma.svg" alt="FIGMA" title="FIGMA" loading="lazy">
             </li>  
             <li class="list-unstyled">
-                <img src="assets/img/xd.svg" alt="xd" title="xd">
+                <img src="assets/img/xd.svg" alt="xd" title="xd" loading="lazy">
             </li>  
         </ul>
 
@@ -427,120 +425,120 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-site">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/telenordeste.png" class="img-fluid" alt="Telenordeste">
+                <img src="assets/img/portfolio/telenordeste.png" class="img-fluid" alt="Telenordeste" title="Telenordeste" loading="lazy">
                 <div class="portfolio-info">
                   <h3>Telenordeste - SE</h3>
                   <p>Full Stack Developement</p>
-                  <a href="assets/img/portfolio/telenordeste.png" title="Telenordeste - SE" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="#" title="More Details" class="details-link" data-target="telenordeste"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/telenordeste.png" rel="nofollow noopener noreferrer" title="Telenordeste - SE" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" rel="nofollow noopener noreferrer" title="More Details" class="details-link" data-target="telenordeste"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-site">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/flygoturismo.png" class="img-fluid" alt="Flygo Turismo">
+                <img src="assets/img/portfolio/flygoturismo.png" class="img-fluid" alt="Flygo Turismo" title="Flygo Turismo">
                 <div class="portfolio-info">
                   <h3>Flygo Turismo</h3>
                   <p>Front-End Developement</p>
-                  <a href="assets/img/portfolio/flygoturismo.png" title="Flygo Turismo" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="#" title="More Details" class="details-link" data-target="flygoturismo"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/flygoturismo.png" rel="nofollow noopener noreferrer" title="Flygo Turismo" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" rel="nofollow noopener noreferrer" title="More Details" class="details-link" data-target="flygoturismo"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-site">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/sabonete.jpg" class="img-fluid" alt="Sabonete Natural">
+                <img src="assets/img/portfolio/sabonete.jpg" class="img-fluid" alt="Sabonete Natural" title="Sabonete Natural">
                 <div class="portfolio-info">
                   <h3>Sabonete Natural Viva Ervas</h3>
                   <p>Full Stack Developement</p>
-                  <a href="assets/img/portfolio/sabonete.jpg" title="Sabonete Natural Viva Ervas" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="#" title="More Details" class="details-link" data-target="vivaervas"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/sabonete.jpg" rel="nofollow noopener noreferrer" title="Sabonete Natural Viva Ervas" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" rel="nofollow noopener noreferrer" title="More Details" class="details-link" data-target="vivaervas"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-site">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/dulce.jpg" class="img-fluid" alt="Obras Sociais Irmã Dulce">
+                <img src="assets/img/portfolio/dulce.jpg" class="img-fluid" alt="Obras Sociais Irmã Dulce" title="Obras Sociais Irmã Dulce">
                 <div class="portfolio-info">
                   <h3>Obras Sociais Irmã Dulce</h3>
                   <p>Back End Developement</p>
-                  <a href="assets/img/portfolio/dulce.jpg" title="Obras Sociais Irmã Dulce" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="#" title="More Details" class="details-link" data-target="dulce"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/dulce.jpg" rel="nofollow noopener noreferrer" title="Obras Sociais Irmã Dulce" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" rel="nofollow noopener noreferrer" title="More Details" class="details-link" data-target="dulce"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-site">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/dna.jpg" class="img-fluid" alt="DNA Genética">
+                <img src="assets/img/portfolio/dna.jpg" class="img-fluid" alt="DNA Genética" title="DNA Genética">
                 <div class="portfolio-info">
                   <h3>DNA Genética</h3>
                   <p>Back End Developement</p>
-                  <a href="assets/img/portfolio/dna.jpg" title="DNA Genética" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="#" title="More Details" class="details-link" data-target="dna"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/dna.jpg" rel="nofollow noopener noreferrer" title="DNA Genética" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" rel="nofollow noopener noreferrer" title="More Details" class="details-link" data-target="dna"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ecommerce">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/depylcare.png" class="img-fluid" alt="Depyl Care">
+                <img src="assets/img/portfolio/depylcare.png" class="img-fluid" alt="Depyl Care" title="Depyl Care">
                 <div class="portfolio-info">
                   <h3>Depyl Care</h3>
                   <p>Full Stack Developement</p>
-                  <a href="assets/img/portfolio/depylcare.png" title="Depyl Care" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="#" title="More Details" class="details-link" data-target="depylcare"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/depylcare.png" rel="nofollow noopener noreferrer" title="Depyl Care" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" rel="nofollow noopener noreferrer" title="More Details" class="details-link" data-target="depylcare"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-system">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/sushitan.png" class="img-fluid" alt="Sushitan">
+                <img src="assets/img/portfolio/sushitan.png" class="img-fluid" alt="Sushitan" title="Sushitan">
                 <div class="portfolio-info">
                   <h3>Sushitan</h3>
                   <p>Full Stack Developement</p>
-                  <a href="assets/img/portfolio/sushitan.png" title="Sushitan" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="#" title="More Details" class="details-link" data-target="sushitan"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/sushitan.png" rel="nofollow noopener noreferrer" title="Sushitan" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" rel="nofollow noopener noreferrer" title="More Details" class="details-link" data-target="sushitan"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-system">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/painel.jpg" class="img-fluid" alt="WHI - Web de Alta Inspiração">
+                <img src="assets/img/portfolio/painel.jpg" class="img-fluid" alt="WHI - Web de Alta Inspiração" title="WHI -Web de Alta Inspiração">
                 <div class="portfolio-info">
                   <h3>WHI - Web de Alta Inspiração</h3>
                   <p>Full Stack Developement</p>
-                  <a href="assets/img/portfolio/painel.jpg" title="WHI - Web de Alta Inspiração" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="#" title="More Details" class="details-link" data-target="whi"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/painel.jpg" rel="nofollow noopener noreferrer" title="WHI - Web de Alta Inspiração" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" rel="nofollow noopener noreferrer" title="More Details" class="details-link" data-target="whi"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-system">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/coesa-rj.jpg" class="img-fluid" alt="Coesa Recuperação Judicial">
+                <img src="assets/img/portfolio/coesa-rj.jpg" class="img-fluid" alt="Coesa Recuperação Judicial" title="Coesa Recuperação Judicial">
                 <div class="portfolio-info">
                   <h3>Coesa Recuperação Judicial</h3>
                   <p>Back End Developement</p>
-                  <a href="assets/img/portfolio/coesa-rj.jpg" title="Coesa Recuperação Judicial" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="#" title="More Details" class="details-link" data-target="coesarj"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/coesa-rj.jpg" rel="nofollow noopener noreferrer" title="Coesa Recuperação Judicial" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" rel="nofollow noopener noreferrer" title="More Details" class="details-link" data-target="coesarj"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-system">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/coesa-sistema.jpg" class="img-fluid" alt="Coesa">
+                <img src="assets/img/portfolio/coesa-sistema.jpg" class="img-fluid" alt="Coesa" title="Coesa">
                 <div class="portfolio-info">
                   <h3>Coesa</h3>
                   <p>Back End Developement</p>
-                  <a href="assets/img/portfolio/coesa-sistema.jpg" title="Coesa" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="#" title="More Details" class="details-link" data-target="coesasystem"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/coesa-sistema.jpg" rel="nofollow noopener noreferrer" title="Coesa" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" rel="nofollow noopener noreferrer" title="More Details" class="details-link" data-target="coesasystem"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -580,7 +578,7 @@
                             <div class="swiper-wrapper align-items-center">
 
                               <div class="swiper-slide">
-                                <img src="assets/img/portfolio/telenordeste.png" alt="Telenordeste">
+                                <img src="assets/img/portfolio/telenordeste.png" alt="Telenordeste" title="Telenordeste">
                               </div>
 
                             </div>
@@ -596,7 +594,7 @@
                               <li><strong>Client</strong>: Telenordete - SE</li>
                               <li><strong>Partner</strong>: L7design</li>
                               <li><strong>Project date</strong>: March, 2024</li>
-                              <li><strong>Project URL</strong>: <a href="https://www.telenordeste-se.com.br" target="_blank">https://www.telenordeste-se.com.br</a></li>
+                              <li><strong>Project URL</strong>: <a href="https://www.telenordeste-se.com.br" rel="nofollow noopener noreferrer" target="_blank">https://www.telenordeste-se.com.br</a></li>
                             </ul>
                           </div>
                           <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
@@ -650,7 +648,7 @@
                             <div class="swiper-wrapper align-items-center">
 
                               <div class="swiper-slide">
-                                <img src="assets/img/portfolio/flygoturismo.png" alt="Flygo Turismo">
+                                <img src="assets/img/portfolio/flygoturismo.png" alt="Flygo Turismo" title="Flygo Turismo">
                               </div>
 
                             </div>
@@ -665,7 +663,7 @@
                               <li><strong>Category</strong>: LandingPage</li>
                               <li><strong>Client</strong>: Flygo Turismo</li>
                               <li><strong>Project date</strong>: Octuber, 2024</li>
-                              <li><strong>Project URL</strong>: <a href="https://disney.flygoturismo.com.br" target="_blank">https://disney.flygoturismo.com.br</a></li>
+                              <li><strong>Project URL</strong>: <a href="https://disney.flygoturismo.com.br" rel="nofollow noopener noreferrer" target="_blank">https://disney.flygoturismo.com.br</a></li>
                             </ul>
                           </div>
                           <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
@@ -714,7 +712,7 @@
                             <div class="swiper-wrapper align-items-center">
 
                               <div class="swiper-slide">
-                                <img src="assets/img/portfolio/depylcare.png" alt="depylcare">
+                                <img src="assets/img/portfolio/depylcare.png" alt="DepylCare" title="DepylCare">
                               </div>
 
                             </div>
@@ -729,7 +727,7 @@
                               <li><strong>Category</strong>: Ecommerce</li>
                               <li><strong>Client</strong>: Depyl Care</li>
                               <li><strong>Project date</strong>: January, 2025</li>
-                              <li><strong>Project URL</strong>: <a href="https://depylcare.com.br" target="_blank">https://depylcare.com.br</a></li>
+                              <li><strong>Project URL</strong>: <a href="https://depylcare.com.br" rel="nofollow noopener noreferrer" target="_blank">https://depylcare.com.br</a></li>
                             </ul>
                           </div>
                           <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
@@ -782,7 +780,7 @@
                             <div class="swiper-wrapper align-items-center">
 
                               <div class="swiper-slide">
-                                <img src="assets/img/portfolio/sushitan.png" alt="Sushitan">
+                                <img src="assets/img/portfolio/sushitan.png" alt="Sushitan" title="Sushitan">
                               </div>
 
                             </div>
@@ -797,7 +795,7 @@
                               <li><strong>Category</strong>: Delivery System</li>
                               <li><strong>Client</strong>: Sushitan</li>
                               <li><strong>Project date</strong>: January, 2025</li>
-                              <li><strong>Project URL</strong>: <a href="https://github.com/waggneroliveira/deliverySystem.git" target="_blank">https://github.com/waggneroliveira/deliverySystem.git</a></li>
+                              <li><strong>Project URL</strong>: <a href="https://github.com/waggneroliveira/deliverySystem.git" rel="nofollow noopener noreferrer" target="_blank">https://github.com/waggneroliveira/deliverySystem.git</a></li>
                             </ul>
                           </div>
                           <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
@@ -850,7 +848,7 @@
                             <div class="swiper-wrapper align-items-center">
 
                               <div class="swiper-slide">
-                                <img src="assets/img/portfolio/sabonete.jpg" alt="Sabonete Natural">
+                                <img src="assets/img/portfolio/sabonete.jpg" alt="Sabonete Natural" title="Sabonete Natural">
                               </div>
 
                             </div>
@@ -865,7 +863,7 @@
                               <li><strong>Category</strong>: Web Site</li>
                               <li><strong>Client</strong>: Sabonete Natural Viva Ervas</li>
                               <li><strong>Project date</strong>: Octuber, 2024</li>
-                              <li><strong>Project URL</strong>: <a href="https://github.com/waggneroliveira/sabonetenatural.git" target="_blank">https://github.com/waggneroliveira/sabonetenatural.git</a></li>
+                              <li><strong>Project URL</strong>: <a href="https://github.com/waggneroliveira/sabonetenatural.git" rel="nofollow noopener noreferrer" target="_blank">https://github.com/waggneroliveira/sabonetenatural.git</a></li>
                             </ul>
                           </div>
                           <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
@@ -918,7 +916,7 @@
                             <div class="swiper-wrapper align-items-center">
 
                               <div class="swiper-slide">
-                                <img src="assets/img/portfolio/painel.jpg" alt="WHI - Web de Alta Inspiração">
+                                <img src="assets/img/portfolio/painel.jpg" alt="WHI - Web de Alta Inspiração" title=" WHI - Web de Alta Inspiração">
                               </div>
 
                             </div>
@@ -933,7 +931,7 @@
                               <li><strong>Category</strong>: System</li>
                               <li><strong>Client</strong>: WHI - Web de Alta Inspiração</li>
                               <li><strong>Project date</strong>: Octuber, 2024</li>
-                              <li><strong>Project URL</strong>: <a href="https://github.com/waggneroliveira/novo-painel.git" target="_blank">https://github.com/waggneroliveira/novo-painel.git</a></li>
+                              <li><strong>Project URL</strong>: <a href="https://github.com/waggneroliveira/novo-painel.git" rel="nofollow noopener noreferrer" target="_blank">https://github.com/waggneroliveira/novo-painel.git</a></li>
                             </ul>
                           </div>
                           <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
@@ -986,7 +984,7 @@
                             <div class="swiper-wrapper align-items-center">
 
                               <div class="swiper-slide">
-                                <img src="assets/img/portfolio/dulce.jpg" alt="Obras Sociais Irmã Dulce">
+                                <img src="assets/img/portfolio/dulce.jpg" alt="Obras Sociais Irmã Dulce" title="Obras Sociais Irmã Dulce">
                               </div>
 
                             </div>
@@ -1002,7 +1000,7 @@
                               <li><strong>Client</strong>: Obras Sociais Irmã Dulce</li>
                               <li><strong>Partner</strong>: Hoom Interativa</li>
                               <li><strong>Project date</strong>: February, 2021</li>
-                              <li><strong>Project URL</strong>: <a href="https://irmadulce.org.br" target="_blank">https://irmadulce.org.br</a></li>
+                              <li><strong>Project URL</strong>: <a href="https://irmadulce.org.br" rel="nofollow noopener noreferrer" target="_blank">https://irmadulce.org.br</a></li>
                             </ul>
                           </div>
                           <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">                            
@@ -1057,7 +1055,7 @@
                             <div class="swiper-wrapper align-items-center">
 
                               <div class="swiper-slide">
-                                <img src="assets/img/portfolio/dna.jpg" alt="DNA Genética">
+                                <img src="assets/img/portfolio/dna.jpg" alt="DNA Genética" title="DNA Genética">
                               </div>
 
                             </div>
@@ -1073,7 +1071,7 @@
                               <li><strong>Client</strong>: DNA Genética</li>
                               <li><strong>Partner</strong>: Hoom Interativa</li>
                               <li><strong>Project date</strong>: January, 2024</li>
-                              <li><strong>Project URL</strong>: <a href="https://www.dnagenetica.com.br" target="_blank">https://www.dnagenetica.com.br</a></li>
+                              <li><strong>Project URL</strong>: <a href="https://www.dnagenetica.com.br" rel="nofollow noopener noreferrer" target="_blank">https://www.dnagenetica.com.br</a></li>
                             </ul>
                           </div>
                           <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
@@ -1123,7 +1121,7 @@
                             <div class="swiper-wrapper align-items-center">
 
                               <div class="swiper-slide">
-                                <img src="assets/img/portfolio/coesa-rj.jpg" alt="Coesa Recuperação Judicial">
+                                <img src="assets/img/portfolio/coesa-rj.jpg" alt="Coesa Recuperação Judicial" title="Coesa Recuperação Judicial">
                               </div>
 
                             </div>
@@ -1139,7 +1137,7 @@
                               <li><strong>Client</strong>: Coesa Recuperação Judicial</li>
                               <li><strong>Partner</strong>: Hoom Interativa</li>
                               <li><strong>Project date</strong>: May, 2022</li>
-                              <li><strong>Project URL</strong>: <a href="https://coesa.com.br/recuperacao-judicial" target="_blank">https://coesa.com.br/recuperacao-judicial</a></li>
+                              <li><strong>Project URL</strong>: <a href="https://coesa.com.br/recuperacao-judicial" rel="nofollow noopener noreferrer" target="_blank">https://coesa.com.br/recuperacao-judicial</a></li>
                             </ul>
                           </div>
                           <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
@@ -1189,7 +1187,7 @@
                             <div class="swiper-wrapper align-items-center">
 
                               <div class="swiper-slide">
-                                <img src="assets/img/portfolio/coesa-sistema.jpg" alt="Coesa">
+                                <img src="assets/img/portfolio/coesa-sistema.jpg" alt="Coesa" title="Coesa">
                               </div>
 
                             </div>
@@ -1205,7 +1203,7 @@
                               <li><strong>Client</strong>: Coesa</li>
                               <li><strong>Partner</strong>: Hoom Interativa</li>
                               <li><strong>Project date</strong>: September, 2022</li>
-                              <li><strong>Project URL</strong>: <a href="https://coesa.com.br" target="_blank">https://coesa.com.br</a></li>
+                              <li><strong>Project URL</strong>: <a href="https://coesa.com.br" rel="nofollow noopener noreferrer" target="_blank">https://coesa.com.br</a></li>
                             </ul>
                           </div>
                           <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
@@ -1281,7 +1279,7 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <script>
+        <script defer>
             var currentYear = new Date().getFullYear();
             document.write('<p>© ' + currentYear + ' <span>All Rights Reserved</span></p>');
         </script>  
@@ -1295,7 +1293,7 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" rel="nofollow noopener noreferrer" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -1307,10 +1305,8 @@
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <!-- JavaScript -->
   <script>
     function openModal(id) {
