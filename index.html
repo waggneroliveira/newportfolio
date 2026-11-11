@@ -1195,6 +1195,24 @@
             const p = projectsData[projectId];
             if (!p) return;
 
+            const projectUrl = p.url.trim();
+            const escapeHtml = (value) => value.replace(/[&<>"']/g, character => ({
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#39;'
+            })[character]);
+            let validProjectUrl = '';
+            try {
+                const parsedUrl = new URL(projectUrl);
+                if (parsedUrl.protocol === 'http:' || parsedUrl.protocol === 'https:') {
+                    validProjectUrl = parsedUrl.href;
+                }
+            } catch {
+                // Invalid or incomplete URLs are shown as plain text.
+            }
+
             modalBody.innerHTML = `
                 <img src="${p.image}" alt="${p.title}" class="w-full h-56 object-cover rounded-xl border border-slate-800">
                 <div class="flex items-center justify-between pt-2">
@@ -1205,9 +1223,9 @@
                 <p class="text-sm text-slate-300 leading-relaxed">${p.desc}</p>
                 <div class="space-y-1">
                     <span class="text-xs font-mono text-slate-400">Project URL</span>
-                    ${p.url
-                        ? `<a href="${p.url}" target="_blank" rel="noopener noreferrer" class="block text-sm text-cyan-400 hover:underline break-all">${p.url}</a>`
-                        : '<span class="block text-sm text-slate-500">Not provided</span>'}
+                    ${validProjectUrl
+                        ? `<a href="${escapeHtml(validProjectUrl)}" target="_blank" rel="noopener noreferrer" class="block text-sm text-cyan-400 hover:underline break-all">${escapeHtml(projectUrl)}</a>`
+                        : `<span class="block text-sm text-slate-500">${escapeHtml(projectUrl || 'Not provided')}</span>`}
                 </div>
                 <div class="pt-4 flex items-center justify-end gap-3 border-t border-slate-800">
                     <button onclick="closeModal()" class="px-4 py-2 rounded-lg bg-slate-800 text-slate-300 text-xs font-semibold hover:bg-slate-700">Close</button>
