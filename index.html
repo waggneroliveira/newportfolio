@@ -160,7 +160,7 @@
     <!-- Mobile Header Navigation Toggle -->
     <header class="lg:hidden fixed top-0 left-0 right-0 z-50 bg-[#0b1120]/90 backdrop-blur-md border-b border-slate-800 px-4 py-3 flex items-center justify-between">
         <a href="#hero" class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-cyan-500 to-emerald-400 p-0.5">
+            <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-[#005af9] to-emerald-400 p-0.5">
                 <div class="w-full h-full bg-slate-900 rounded-full flex items-center justify-center font-bold text-cyan-400 text-sm">WV</div>
             </div>
             <span class="font-bold text-slate-100 text-base tracking-wide">Wagner V.</span>
@@ -176,7 +176,7 @@
             <!-- Profile Info -->
             <div class="flex flex-col items-center text-center mt-4 lg:mt-2">
                 <div class="relative group">
-                    <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-500 to-emerald-500 blur opacity-40 group-hover:opacity-100 transition duration-500"></div>
+                    <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-[#005af9] to-emerald-500 blur opacity-40 group-hover:opacity-100 transition duration-500"></div>
                     <img src="assets/img/my-profile-img.webp" 
                          alt="Wagner Vasconcelos Profile" 
                          onerror="this.src='https://placehold.co/160x160/0f172a/38bdf8?text=WV'"
@@ -299,7 +299,7 @@
 
                 <!-- CTA Action Buttons -->
                 <div class="mt-8 flex flex-wrap items-center gap-4">
-                    <a href="#portfolio" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-emerald-500 text-slate-950 font-bold hover:shadow-lg hover:shadow-cyan-500/25 transition-all flex items-center gap-2">
+                    <a href="#portfolio" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#005af9] to-emerald-500 text-slate-950 font-bold hover:shadow-lg hover:shadow-cyan-500/25 transition-all flex items-center gap-2">
                         <i class="fa-solid fa-code-folder"></i>
                         <span>Explore Projects</span>
                     </a>
@@ -694,7 +694,7 @@
                                 <p class="text-xs text-slate-400 mt-2 line-clamp-2">Institutional website with custom Laravel back-end management panel and high page performance.</p>
                             </div>
                             <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between">
-                                <span class="text-xs text-slate-400 font-mono">Laravel • Vue • MySQL</span>
+                                <span class="text-xs text-slate-400 font-mono">Laravel • Bootstrap • MySQL</span>
                                 <button onclick="openModal('telenordeste')" class="text-xs font-semibold text-cyan-400 hover:underline">Details &rarr;</button>
                             </div>
                         </div>
@@ -794,7 +794,7 @@
                                 <p class="text-xs text-slate-400 mt-2 line-clamp-2">Modern, ultra-fast agency showcase highlighting technology services, portfolios, and lead generation.</p>
                             </div>
                             <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between">
-                                <span class="text-xs text-slate-400 font-mono">Laravel • Tailwind • SEO</span>
+                                <span class="text-xs text-slate-400 font-mono">Laravel • Bootstrap • SEO</span>
                                 <button onclick="openModal('whi')" class="text-xs font-semibold text-cyan-400 hover:underline">Details &rarr;</button>
                             </div>
                         </div>
@@ -819,8 +819,34 @@
                                 <p class="text-xs text-slate-400 mt-2 line-clamp-2">Comprehensive client portal & content management dashboard built with reactive components.</p>
                             </div>
                             <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between">
-                                <span class="text-xs text-slate-400 font-mono">Laravel • Vue.js • Admin</span>
+                                <span class="text-xs text-slate-400 font-mono">Laravel • Bootstrap • Admin</span>
                                 <button onclick="openModal('whipanel')" class="text-xs font-semibold text-cyan-400 hover:underline">Details &rarr;</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: WHI WEB -->
+                    <div class="portfolio-card glass-card rounded-2xl overflow-hidden border border-slate-800 flex flex-col justify-between group" data-category="system">
+                        <div class="relative overflow-hidden aspect-video bg-slate-900">
+                            <img src="assets/img/portfolio/whiweb.png"
+                                 alt="WHI Management Panel" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <button onclick="openModal('whiweb')" class="p-3 rounded-full bg-cyan-500 text-slate-950 font-bold hover:scale-110 transition-transform">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="p-5 flex flex-col flex-grow justify-between">
+                            <div>
+                                <span class="text-[11px] font-mono text-amber-400 uppercase tracking-wide">SaaS / Multi-Tenant CMS</span>
+                                <h4 class="text-lg font-bold text-slate-100 mt-1">WHI WEB – Website Management Platform</h4>
+                                <p class="text-xs text-slate-400 mt-2 line-clamp-2">Multi-tenant website management platform featuring customizable templates, centralized content management, user permissions, and integrated business tools.</p>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                                <span class="text-xs text-slate-400 font-mono">Laravel • MySQL • Bootstrap</span>
+                                <button onclick="openModal('whiweb')" class="text-xs font-semibold text-cyan-400 hover:underline">Details &rarr;</button>
                             </div>
                         </div>
                     </div>
@@ -911,7 +937,7 @@
                                           class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors resize-none"></textarea>
                             </div>
 
-                            <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-emerald-500 text-slate-950 font-bold hover:shadow-lg hover:shadow-cyan-500/25 transition-all flex items-center justify-center gap-2">
+                            <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#005af9] to-emerald-500 text-slate-950 font-bold hover:shadow-lg hover:shadow-cyan-500/25 transition-all flex items-center justify-center gap-2">
                                 <i class="fa-solid fa-paper-plane"></i>
                                 <span>Send Message</span>
                             </button>
@@ -1071,7 +1097,7 @@
             telenordeste: {
                 title: "Telenordeste - SE",
                 category: "Full Stack Development",
-                tech: "Laravel, Vue.js, MySQL, Tailwind CSS",
+                tech: "Laravel, Bootstrap, MySQL",
                 image: "assets/img/portfolio/telenordeste.webp",
                 desc: "Complete web portal developed for Telenordeste Sergipe. Features an administrative dashboard for managing company news, services, contact leads, and performance SEO optimizations."
             },
@@ -1087,7 +1113,7 @@
                 category: "Full Stack / Ordering System",
                 tech: "Laravel, Vue.js, REST APIs, MySQL",
                 image: "assets/img/portfolio/sushitan.webp",
-                desc: "Custom web ordering platform built for a specialized Japanese food restaurant chain, supporting menu updates, order queue management, and analytics."
+                desc: "Custom web-based ordering platform developed for a specialized Japanese food restaurant in Portugal, featuring menu management, order queue organization, and direct order submission via WhatsApp."
             },
             loveprive: {
                 title: "Love Prive Platform",
@@ -1099,16 +1125,23 @@
             whi: {
                 title: "Agência WHI Main Site",
                 category: "Full Stack Development",
-                tech: "Laravel, Vue, Tailwind CSS, Technical SEO",
+                tech: "Laravel, Bootstrap, Technical SEO",
                 image: "assets/img/portfolio/site-whi.png",
                 desc: "Main web agency platform highlighting modern corporate web agency services, interactive client showcases, and automated lead capture forms."
             },
             whipanel: {
                 title: "WHI Admin Manager Panel",
                 category: "System / Management Panel",
-                tech: "Laravel, Vue.js, MySQL, Chart.js",
+                tech: "Laravel, Bootstrap, MySQL, Chart.js",
                 image: "assets/img/portfolio/painel.webp",
                 desc: "Custom administrative manager dashboard engineered to monitor client projects, generate metrics, manage user privileges, and streamline operations."
+            },
+            whiweb: {
+                title: "WHI WEB – Website Management Platform",
+                category: "SaaS / Multi-Tenant CMS",
+                tech: "Laravel, PHP, Bootstrap, MySQL, JavaScript",
+                image: "assets/img/portfolio/whiweb.png",
+                desc: "Multi-tenant website management platform developed by WHI, enabling businesses to manage their websites through a centralized administrative panel, with customizable templates, content management, user permissions, and integrated business tools."
             }
         };
 
